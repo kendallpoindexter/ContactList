@@ -9,6 +9,6 @@
 import Foundation
 
 struct ContactList {
-    let arrayOfContacts: [Contact] = [Contact(firstName: "Kendall", lastName: "Poindexter", phoneNumber: "313-377-4051")]
+    var arrayOfContacts: [Contact] = [Contact(firstName: "Kendall", lastName: "Poindexter", phoneNumber: "313-377-4051")]
 }
 

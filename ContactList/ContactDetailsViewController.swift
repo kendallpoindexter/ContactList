@@ -9,6 +9,13 @@
 import UIKit
 
 class ContactDetailsViewController: UIViewController {
+    
+    //MARK: - Outlets
+    @IBOutlet weak var firstNameLabel: UILabel!
+    @IBOutlet weak var lastNameLabel: UILabel!
+    @IBOutlet weak var phoneNumberLabel: UILabel!
+    
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()

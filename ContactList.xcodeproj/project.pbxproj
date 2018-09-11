@@ -15,6 +15,7 @@
 		EBC97B832146266A008F830B /* Contact.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBC97B822146266A008F830B /* Contact.swift */; };
 		EBC97B8521462806008F830B /* ContactList.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBC97B8421462806008F830B /* ContactList.swift */; };
 		EBC97B8721462FA8008F830B /* AddContactsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBC97B8621462FA8008F830B /* AddContactsTableViewController.swift */; };
+		EBC97BAB214848C4008F830B /* ContactDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBC97BAA214848C4008F830B /* ContactDetailsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		EBC97B822146266A008F830B /* Contact.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contact.swift; sourceTree = "<group>"; };
 		EBC97B8421462806008F830B /* ContactList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactList.swift; sourceTree = "<group>"; };
 		EBC97B8621462FA8008F830B /* AddContactsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddContactsTableViewController.swift; sourceTree = "<group>"; };
+		EBC97BAA214848C4008F830B /* ContactDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactDetailsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +67,7 @@
 				EBC97B7521462564008F830B /* Assets.xcassets */,
 				EBC97B7721462564008F830B /* LaunchScreen.storyboard */,
 				EBC97B7A21462564008F830B /* Info.plist */,
+				EBC97BAA214848C4008F830B /* ContactDetailsViewController.swift */,
 				EBC97B802146261E008F830B /* ContactsTableViewController.swift */,
 				EBC97B8621462FA8008F830B /* AddContactsTableViewController.swift */,
 				EBC97B822146266A008F830B /* Contact.swift */,
@@ -146,6 +149,7 @@
 			files = (
 				EBC97B8721462FA8008F830B /* AddContactsTableViewController.swift in Sources */,
 				EBC97B8521462806008F830B /* ContactList.swift in Sources */,
+				EBC97BAB214848C4008F830B /* ContactDetailsViewController.swift in Sources */,
 				EBC97B832146266A008F830B /* Contact.swift in Sources */,
 				EBC97B812146261E008F830B /* ContactsTableViewController.swift in Sources */,
 				EBC97B6F21462563008F830B /* AppDelegate.swift in Sources */,

@@ -8,7 +8,18 @@
 
 import UIKit
 
+protocol AddContactsTableViewControllerDelegate: class {
+    
+    func addContactsTableViewControllerDidCancel( _ controller: AddContactsTableViewController)
+    
+    func addContactsTableViewController(_ controller: AddContactsTableViewController, didFinishAdding contact: Contact)
+}
+
 class AddContactsTableViewController: UITableViewController {
+    
+    //MARK: - Properties
+    
+    weak var delegate: AddContactsTableViewControllerDelegate?
     
     //MARK: - Outlets
     @IBOutlet weak var firstNameInput: UITextField!
@@ -36,11 +47,12 @@ class AddContactsTableViewController: UITableViewController {
     
     //MARK: - Methods
     
+   
     
     //MARK: - Actions
     
     @IBAction func cancel(_ sender: UIBarButtonItem) {
-        navigationController?.navigationController?.popViewController(animated: true)
+        delegate?.addContactsTableViewControllerDidCancel(self)
     }
     
     @IBAction func done(_ sender: UIBarButtonItem) {
@@ -49,10 +61,9 @@ class AddContactsTableViewController: UITableViewController {
             let phone = phoneNumberInput.text else {
             return
         }
-        
-        var contact = Contact(firstName: first, lastName: last, phoneNumber: phone)
-        
-        
+        let contact = Contact(firstName: first, lastName: last, phoneNumber: phone)
+        delegate?.addContactsTableViewController(self, didFinishAdding: contact)
+
         
     }
     

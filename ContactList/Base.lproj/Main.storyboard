@@ -138,12 +138,12 @@
                     <navigationItem key="navigationItem" title="Add  Contact" id="Fae-5u-tPd">
                         <barButtonItem key="leftBarButtonItem" style="plain" systemItem="cancel" id="gGD-VD-ic4">
                             <connections>
-                                <action selector="cancel:" destination="Fng-pW-UcB" id="yzp-8C-163"/>
+                                <action selector="cancel:" destination="Fng-pW-UcB" id="XEb-An-IYM"/>
                             </connections>
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" style="done" systemItem="done" id="lXp-X7-Rrr">
                             <connections>
-                                <action selector="done:" destination="Fng-pW-UcB" id="Msd-RB-JQi"/>
+                                <action selector="done:" destination="Fng-pW-UcB" id="oZw-qQ-tfU"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>

@@ -22,6 +22,7 @@ class AddContactsTableViewController: UITableViewController {
     weak var delegate: AddContactsTableViewControllerDelegate?
     
     //MARK: - Outlets
+    
     @IBOutlet weak var firstNameInput: UITextField!
     @IBOutlet weak var lastNameInput: UITextField!
     @IBOutlet weak var phoneNumberInput: UITextField!

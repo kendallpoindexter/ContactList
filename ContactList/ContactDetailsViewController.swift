@@ -11,22 +11,35 @@ import UIKit
 class ContactDetailsViewController: UIViewController {
     
     //MARK: - Outlets
-    @IBOutlet weak var firstNameLabel: UILabel!
-    @IBOutlet weak var lastNameLabel: UILabel!
-    @IBOutlet weak var phoneNumberLabel: UILabel!
+    @IBOutlet var lastNameLabel: UILabel!
+    @IBOutlet var phoneNumberLabel: UILabel!
+    @IBOutlet var firstNameLabel: UILabel!
+    
+    //MARK: - Properties
+    var contact: Contact?
     
     
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        guard let contact = contact else {return}
+        populateDetailView(data: contact)
+        
         // Do any additional setup after loading the view.
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    //MARK: - Methods
+    
+    func populateDetailView(data: Contact) {
+        firstNameLabel.text = data.firstName
+        lastNameLabel.text = data.lastName
+        phoneNumberLabel.text = data.phoneNumber
+    }
+    
     
 
     /*

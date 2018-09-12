@@ -9,16 +9,15 @@
 import UIKit
 
 class ContactsTableViewController: UITableViewController {
-    
-    
-    
+ 
     //MARK: - Properties
     
     var contactList = ContactList()
-
+    var selectedContactIndex = 0
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        navigationController?.navigationBar.prefersLargeTitles = true
     }
 
     
@@ -50,9 +49,19 @@ class ContactsTableViewController: UITableViewController {
         if segue.identifier == "contactSegue" {
             guard let addContactTableViewController = segue.destination as? AddContactsTableViewController else { return }
             addContactTableViewController.delegate = self
+        } else if segue.identifier == "contactDetailsSegue" {
+            guard let contactDetailsViewController = segue.destination as? ContactDetailsViewController else {return}
+            
+            contactDetailsViewController.contact = contactList.arrayOfContacts[selectedContactIndex]
         }
     }
+    
+    override func tableView(_ tableView: UITableView, willSelectRowAt indexPath: IndexPath) -> IndexPath? {
+        selectedContactIndex = indexPath.row
+        return indexPath
+    }
 }
+
 
 //MARK: - Delegate Protocols
 
